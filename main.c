@@ -2,24 +2,23 @@
 
 int main() {
 
-    unsigned long int podstawa_silni;
-    unsigned long int licznik;
-    unsigned long int wynik = 1;
+    int n_wyraz;
+    int licznik=0;
 
-    printf("Podaj wartosc calkowita dla ktorej mam obliczyc silnie, n = ");
-    scanf(" %ld", &podstawa_silni);
+{
+printf("Podaj ktory wyraz ciagu wyliczyc, n= ");
+scanf("%d ", &n_wyraz);
 
-    if (podstawa_silni <= 15) {
+	if(n_wyraz == 1)  printf("\n Wartosc %d-tego wyrazu ciagu Fibonacciego wynosi 0 \n");
+	if(n_wyraz == 2)  printf("\n Wartosc %d-tego wyrazu ciagu Fibonacciego wynosi 1 \n");
+	if(n_wyraz == 3)  printf("\n Wartosc %d-tego wyrazu ciagu Fibonacciego wynosi 1 \n");
 
-        for (licznik = 2; licznik <= podstawa_silni; licznik++) {
-            wynik *= licznik;
-        }
+	else (n_wyraz >=4) {
+		for (licznik = 0; licznik <= n_wyraz; licznik++);
+            		wynik = licznik(n-1)+(n-2);}
+       	 printf("\n Wartosc %d-tego wyrazu ciagu Fibonacciego wynosi: ", wynik);
 
-        printf("\nSilnia wynosi: %ld\n", wynik);
 
-    } else {
-        printf("Za duza wartosc n, n <= 15");
-    }
 
     return 0;
 }
